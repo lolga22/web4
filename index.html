@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>А я ему, короче, говорю...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="img-responsive col-xs-1">
+            <img id="logo" src="image/boy.jpg" alt="Логотип компании" class="p-2">
+          </div>
+          <div class="col-xs-3">
+            <div id="sitename" class="p-1">MEMES</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container mt-2">
+    <nav class="navbar navbar-inverse navbar-expand-sm justify-content-center">
+      <ul id="menu" class="navbar-nav">
+        <li class="nav-item col-sm-12 col-md-4"><a href="" class="nav-link">Главная</a></li>
+        <li class="nav-item col-sm-12 col-md-4"><a href="" class="nav-link">Новости</a></li>
+        <li class="nav-item col-sm-12 col-md-4"><a href="" class="nav-link">О нас</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="container d-flex flex-column">
+      <ol>
+        <li><a href="http://exmaple.com">абсолютную гиперссылку на главную страницу сайта example.com;</a></li>
+        <li><a href="https://example.com">абсолютную на главную сайта example.com в протоколе https;</a></li>
+        <li><a href="ftp://example.com/plot.txt">ссылку на файл на сервере FTP без авторизации;</a></li>
+        <li><a href="ftp://login:pass123@example.com/plot.txt">ссылку на файл на сервере FTP с авторизацией;</a></li>
+        <li><a href="https://www.matrixresurrections.net#trailer">ссылку на фрагмент страницы некоторого сайта;</a></li>
+        <li><a href="#send-button">ссылка на фрагмент текущей страницы(кнопка отправки формы)</a></li>
+        <li><a href="https://www.matrixresurrections.net?morpheus=redpill&cypher=bluepill">ссылку с двумя параметрами в
+            URL;</a></li>
+        <li>
+          <ul>
+            <li><a href="index.html" title="Что такое матрица?">Главная</a></li>
+            <li><a href="news.html" title="Новости из мира матрицы">Новости</a></li>
+            <li><a href="blog.html" title="Интересные истории из мира матрицы">Блог</a></li>
+            <li><a href="about.html" title="Где найти Морфеуса">О нас</a></li>
+          </ul>
+        </li>
+        <li><a>ссылка без href</a></li>
+        <li><a href="">ссылка с пустым href</a></li>
+        <li><a href="http://example.com" rel="nofollow">ссылку, по которой запрещен переход поисковикам;</a></li>
+        <li><a href="http://example.com" rel="noindex">запрещенную для индексации поисковиками;</a></li>
+        <li>
+          <p>Ученые были в шоке, когда увидели <a href="https://youtu.be/dQw4w9WgXcQ">ЭТО</a>...</p>
+        </li>
+        <li><a href="https://w7.pngwing.com/pngs/345/350/png-transparent-spider-man-drawing-internet-meme-know-your-meme-spiderman-comics-leaf-hand.png">
+          "человек-павук"</a>
+        </li>
+        <li><img src="image/sob.jpg" width="150" height="120" usemap="#flower" alt="все хорошо"></li>
+        <li><a href="trailer.html">относительную на страницу в текущем каталоге;</a></li>
+        <li><a href="about/film.html">относительную на страницу в текущем каталоге;</a></li>
+        <li><a href="../thematrix.html">относительную на страницу в каталоге уровнем выше текущего; </a></li>
+        <li><a href="../../Vachovsky.html">относительную на страницу в каталоге двумя уровнями выше;</a></li>
+        <li><a href="/home">сокращенную на главную;</a></li>
+        <li><a href="/news">сокращенную ссылку на внутреннюю.</a></li>
+      </ol>
+
+      <map name="flower">
+        <area shape="rect" coords="0,0,30,120" href="http://example.com" alt="ссылка на ресурс" />
+        <area shape="rect" coords="0,0,150,10" href="http://example.com" alt="ссылка на ресурс" />
+        <area shape="rect" coords="120,0,150,120" href="http://example.com" alt="ссылка на ресурс" />
+        <area shape="rect" coords="0,110,150,120" href="http://example.com" alt="ссылка на ресурс" />
+        <area shape="circle" coords="75,57,12" href="http://example.com" alt="ссылка на ресурс" />
+      </map>
+
+      <div class="table-responsive-md order-md-0 order-1">
+        <table class="table table-striped table-bordered">
+          <caption>Тестовая таблица</caption>
+          <tbody>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">mem</th>
+              <th scope="col">год</th>
+              <th scope="col">оценка</th>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Мистер Исключительный</td>
+              <td class="bg-info">2021</td>
+              <td>6/10</td>
+            </tr>
+
+            <tr>
+              <th scope="row">2</th>
+              <td>Скелетор вернется позже</td>
+              <td class="bg-info">2021</td>
+              <td class="highlighted-odd">7/10</td>
+            </tr>
+
+            <tr>
+              <th scope="row">3</th>
+              <td class="highlighted-even">Киану Ривз</td>
+              <td class="bg-info">2019</td>
+              <td>7/10</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td class="highlighted-odd">Doge</td>
+              <td class="bg-info">2013</td>
+              <td class="highlighted-odd">8/10</td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td class="highlighted-odd">Never Gonna Give You Up</td>
+              <td class="bg-info">2008</td>
+              <td class="highlighted-odd">12/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+
+      <div class="container order-md-1 order-0">
+        <form>
+          <div class="form-group row">
+            <label class="col-1 col-form-label">Имя:</label>
+            <div class="col-sm-4 col-md-11">
+              <input class="form-control" name="user-name" placeholder="Pacem" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-1 col-form-label">Email:</label>
+            <div class="col-sm-4 col-md-11">
+              <input class="form-control" name="field-email" placeholder="LOLKEK@mail.com" type="email" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-xs-1 col-md-3 col-form-label">Дата рождения:</label>
+            <div class="col-xs-1 col-md-3">
+              <input class="form-control" name="field-date" value="1969-09-11" type="date" />
+            </div>
+          </div>
+
+          <label>Пол:</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="field-gender" value="Male" />
+            <label class="form-check-label">Мужской</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="field-gender" value="Female" />
+            <label class="form-check-label">Женский</label>
+          </div>
+
+          <label>Количетсво конечностей:</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="number-of-limbs" value="4" />
+            <label class="form-check-label">4</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="number-of-limbs" value="3" />
+            <label class="form-check-label">3</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="number-of-limbs" value="2" />
+            <label class="form-check-label">88</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="number-of-limbs" value="1" />
+            <label class="form-check-label">1</label>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-2 col-form-label">Сверхспособности:</label>
+            <div class="col-xs-2 col-md-3">
+              <select class="custom-select" name="superpowers">
+                <option value="immortality">получение зачета по дискретке</option>
+                <option value="passing_through_walls">Прохождение сковзь стены</option>
+                <option value="levitation">Левитация</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Расскажите о себе. Какой ты вид хлеба?</label>
+            <textarea class="form-control" name="biography">прохладненский</textarea>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" checked="checked" name="check-alice" />
+            <label class="form-check-label">если поставить эту галочку, у меня автоматический зачет по вашему предмету</label>
+          </div>
+
+          <br>
+          <input type="submit" class="btn btn-primary" value="Отправить" id="send-button" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-2 mt-4">
+    <div class="container-fluid">
+      <span class="align-middle">&#xa9; Щербаков Дмитрий 2021</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+</html>

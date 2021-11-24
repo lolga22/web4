@@ -1,0 +1,121 @@
+body, #menu {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+header, nav, #table-ex .highlighted-even, footer {
+  background-color: #4CBB17;
+}
+
+header, nav, main, footer {
+  max-width: 100%;
+}
+
+#header-container {
+  display: flex;
+}
+
+header, #logo, #sitename {
+  padding: 10px;
+}
+
+#logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+#sitename {
+  font-size: 28px;
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 40px;
+  width: 100%;
+}
+
+/* MENU */
+
+#menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  align-content:flex-start;
+}
+
+footer, #table-ex td, #table-ex th {
+  text-align: center;
+}
+
+#menu li {
+  list-style-type: none;
+}
+
+#menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 700;
+}
+
+#menu a:hover {
+  background-color: #4CBB17;
+}
+
+/* MAIN CONTENT */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-data-form {
+  order: 0;
+}
+
+#table-ex {
+  order: 1;
+}
+
+/* TABLE */
+
+#table-ex td, #table-ex th{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#table-ex .highlighted-odd {
+  background-color: #4CBB17;
+}
+
+.connected-elements {
+  background-color: salmon;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main, nav, #header-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  #table-ex{
+    width: 350px;
+    height: 160px;
+  }
+
+  #contact-data-form{ order: 1; }
+  #table-ex { order: 0; }
+}
